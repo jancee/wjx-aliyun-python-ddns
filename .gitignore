@@ -99,3 +99,7 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+conf.d/config.json
+
+.idea

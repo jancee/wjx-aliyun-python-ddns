@@ -6,7 +6,7 @@
 
 > 方法一 直接运行
 
-在使用之前，请确定你安装了python 2.7版本，以及pip。
+在使用之前，请确定你安装了python 2.7版本，以及pip。（或者使用项目中`env`文件夹里提供的virtualenv）
 
 1、将项目中，`conf.d` 文件夹下内的配置文件 `config-template.json` 修改为 `config.conf`，并按照说明，完成配置。
 
@@ -55,3 +55,10 @@ docker run --restart=always wjx-aliyun-python-ddns
 ```
 
 其中 `/root/wjx-aliyun-python-ddns/main.py` 更改为项目文件实际位置，这将会实现每分钟自动更新，具体命令参数含义，请参考cron介绍。
+
+* 如何使用virtualenv
+项目中的 `env` 包含了运行python所需要的环境，因此，可以这样运行项目
+```shell
+source env/bin/activate
+python main.py
+```
